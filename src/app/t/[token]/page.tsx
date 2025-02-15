@@ -1,7 +1,9 @@
 import { getLinkFromToken } from '@/utils/decodingUtils';
 import { redirect } from 'next/navigation';
+import { PageProps } from '@/types/next';
 
-export default async function Token({ params }: { params: { token: string } }) {
+export default async function Token(PageProps: PageProps) {
+    const { params } = await PageProps;
     const token = (await params).token;
 
     const redirectUrl = getLinkFromToken(token);
