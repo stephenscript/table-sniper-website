@@ -35,7 +35,9 @@ export const getLinkFromToken = (encodedToken: string) => {
         /*
             first digit is service code (resy, open table, etc)
 
-            second digit is type (Dining Room, Bar Seat, etc)
+            second digit is party size (1, 2, etc)
+
+            third digit is type (Dining Room, Bar Seat, etc)
 
             next six is date
 
