@@ -5,6 +5,8 @@ const serviceTypes: { [key: string]: string } = {
 const resyTableTypes: { [key: string]: string } = {
     1: 'Dining Room',
     2: 'Bar Seats',
+    3: 'Sip',
+    4: 'Guzzle',
 };
 
 function decodeBase62(encodedString: string) {
@@ -52,7 +54,8 @@ export const getLinkFromToken = (encodedToken: string) => {
         // Resy
         const partySize = token[1];
         const tableTypeCode = token[2];
-        const tableType = resyTableTypes[tableTypeCode];
+        const tableType =
+            tableTypeCode in resyTableTypes ? resyTableTypes[tableTypeCode] : 'Dining Room';
 
         const year = `20${token.slice(3, 5)}`;
         const month = token.slice(5, 7);
