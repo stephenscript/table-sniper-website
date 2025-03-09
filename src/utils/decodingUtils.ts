@@ -7,6 +7,9 @@ const resyTableTypes: { [key: string]: string } = {
     2: 'Bar Seats',
     3: 'Sip',
     4: 'Guzzle',
+    5: 'Indoor Dining',
+    6: 'Bar',
+    9: 'Non-bar',
 };
 
 function decodeBase62(encodedString: string) {
