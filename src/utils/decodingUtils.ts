@@ -78,6 +78,8 @@ export const getLinkFromToken = (encodedToken: string) => {
 
         const tableToken = `rgs://resy/${venueId}/${templateId}/${versionNumber}/${date}/${date}/${time}/${partySize}/${tableType}`;
 
+        console.log({ tableToken });
+
         let encodedReservation = encodeURIComponent(
             JSON.stringify({
                 // venueName: this.restaurant.name,
@@ -86,11 +88,14 @@ export const getLinkFromToken = (encodedToken: string) => {
                 time: `${date} ${time}`,
                 type: tableType,
                 token: tableToken,
+                tableConfigId: tableToken,
             })
         );
 
         encodedReservation = encodedReservation.replace('+', '%2F');
+        console.log({ encodedReservation });
+        const tableUrl = `https://widgets.resy.com/#/reservation-details?reservation=${encodedReservation}&venueId=${venueId}&seats=${partySize}`;
 
-        return `https://widgets.resy.com/#/reservation-details?reservation=${encodedReservation}&venueId=${venueId}`;
+        return tableUrl;
     }
 };
