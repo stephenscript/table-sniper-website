@@ -14,5 +14,5 @@ export default async function Page(PageProps: PageProps) {
         redirect('/');
     }
 
-    return <RestaurantHome restaurantData={restaurantData} />;
+    return <RestaurantHome restaurantData={restaurantData} city={city} id={id} />;
 }

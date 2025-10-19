@@ -1,4 +1,5 @@
 export type RestaurantData = {
+    slug: string;
     name: string;
     logo: string;
     heroImage: string;
@@ -37,6 +38,7 @@ export type RestaurantData = {
 };
 
 export const restaurantData: RestaurantData = {
+    slug: 'new-pho-saigon-noodle-and-grill-restaurant',
     name: 'New Pho Saigon Noodle & Grill Restaurant',
     logo: 'http://static.photos/food/320x240/1',
     heroImage: 'http://static.photos/restaurant/1200x630/1',

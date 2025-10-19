@@ -72,8 +72,8 @@ export const Menu = ({ restaurantData }: MenuProps) => {
 
                 <div className="mt-12 text-center">
                     <a
-                        href="https://www.yelp.com/menu/new-pho-saigon-noodle-and-grill-restaurant-milpitas-4"
-                        target="_blank"
+                        href={`${restaurantData.slug}/menu`}
+                        target='_blank'
                         className="inline-block rounded-full border-2 border-black px-8 py-3 font-bold transition duration-300 hover:bg-black hover:text-white"
                     >
                         VIEW FULL MENU

@@ -117,7 +117,7 @@ export const FullMenu: React.FC<FullMenuProps> = ({ restaurantData }) => {
                     <button
                         onClick={handlePrevPage}
                         disabled={currentPage === 1}
-                        className={`flex items-center gap-2 rounded-lg px-4 py-2 font-semibold transition cursor-pointer ${
+                        className={`flex cursor-pointer items-center gap-2 rounded-lg px-4 py-2 font-semibold transition ${
                             currentPage === 1
                                 ? 'cursor-not-allowed bg-gray-300 text-gray-500'
                                 : 'bg-red-600 text-white hover:bg-red-700'
@@ -136,7 +136,7 @@ export const FullMenu: React.FC<FullMenuProps> = ({ restaurantData }) => {
                     <button
                         onClick={handleNextPage}
                         disabled={currentPage === totalPages}
-                        className={`flex items-center gap-2 rounded-lg px-4 py-2 font-semibold transition cursor-pointer ${
+                        className={`flex cursor-pointer items-center gap-2 rounded-lg px-4 py-2 font-semibold transition ${
                             currentPage === totalPages
                                 ? 'cursor-not-allowed bg-gray-300 text-gray-500'
                                 : 'bg-red-600 text-white hover:bg-red-700'
