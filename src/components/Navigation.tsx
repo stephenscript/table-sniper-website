@@ -34,19 +34,19 @@ export const Navigation = ({ restaurantData }: NavigationProps) => {
                         {restaurantData.name}
                     </div>
                     <div className="hidden space-x-8 md:flex">
-                        <a href="#" className="transition hover:text-yellow-300">
+                        <a href="#" className="transition hover:text-red-400">
                             Home
                         </a>
-                        <a href="#menu" className="transition hover:text-yellow-300">
+                        <a href="#menu" className="transition hover:text-red-400">
                             Menu
                         </a>
-                        <a href="#gallery" className="transition hover:text-yellow-300">
+                        <a href="#gallery" className="transition hover:text-red-400">
                             Gallery
                         </a>
-                        <a href="#locations" className="transition hover:text-yellow-300">
+                        <a href="#locations" className="transition hover:text-red-400">
                             Locations
                         </a>
-                        <a href="#reservations" className="transition hover:text-yellow-300">
+                        <a href="#reservations" className="transition hover:text-red-400">
                             Reservations
                         </a>
                     </div>

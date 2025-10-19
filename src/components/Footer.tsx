@@ -21,24 +21,30 @@ export const Footer = ({ restaurantData }: FooterProps) => {
                             {restaurantData.story.founded}.
                         </p>
                         <div className="flex space-x-4">
-                            <a
-                                href={restaurantData.social.instagram}
-                                className="transition hover:text-red-500"
-                            >
-                                <Instagram className="h-6 w-6" />
-                            </a>
-                            <a
-                                href={restaurantData.social.facebook}
-                                className="transition hover:text-red-500"
-                            >
-                                <Facebook className="h-6 w-6" />
-                            </a>
-                            <a
-                                href={restaurantData.social.twitter}
-                                className="transition hover:text-red-500"
-                            >
-                                <Twitter className="h-6 w-6" />
-                            </a>
+                            {restaurantData.social.instagram ? (
+                                <a
+                                    href={restaurantData.social.instagram}
+                                    className="transition hover:text-red-500"
+                                >
+                                    <Instagram className="h-6 w-6" />
+                                </a>
+                            ) : null}
+                            {restaurantData.social.facebook ? (
+                                <a
+                                    href={restaurantData.social.facebook}
+                                    className="transition hover:text-red-500"
+                                >
+                                    <Facebook className="h-6 w-6" />
+                                </a>
+                            ) : null}
+                            {restaurantData.social.twitter ? (
+                                <a
+                                    href={restaurantData.social.twitter}
+                                    className="transition hover:text-red-500"
+                                >
+                                    <Twitter className="h-6 w-6" />
+                                </a>
+                            ) : null}
                         </div>
                     </div>
                     <div>
@@ -101,7 +107,7 @@ export const Footer = ({ restaurantData }: FooterProps) => {
                             />
                             <button
                                 type="submit"
-                                className="rounded-r-lg bg-red-600 px-4 py-2 text-white transition cursor-pointer hover:bg-red-700"
+                                className="cursor-pointer rounded-r-lg bg-red-600 px-4 py-2 text-white transition hover:bg-red-700"
                             >
                                 <Send className="h-5 w-5" />
                             </button>

@@ -363,8 +363,9 @@ export const restaurantData: RestaurantData = {
         email: 'info@newphosaigon.com',
     },
     social: {
-        instagram: '#',
+        instagram:
+            'https://www.instagram.com/explore/locations/1000579/new-pho-saigon-noodle-grill/',
         facebook: 'https://www.facebook.com/NewPhoSaigonMilpitas/',
-        twitter: '#',
+        twitter: '',
     },
 };
