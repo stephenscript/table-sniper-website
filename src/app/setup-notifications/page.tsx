@@ -29,7 +29,7 @@ const stepsPhone: Step[] = [
         ],
         alt: 'Gmail settings notifications on iPhone',
         label: 'iPhone screenshot: Settings → Email Notifications → High Priority',
-        src: '/settings.png',
+        src: '/settings.PNG',
     },
     {
         id: 'p3',
@@ -40,7 +40,7 @@ const stepsPhone: Step[] = [
         ],
         alt: 'High Priority notifications settings on iPhone',
         label: 'iPhone screenshot: Inbox customization → Labels → Priority',
-        src: '/email_notifications.png',
+        src: '/email_notifications.PNG',
     },
     {
         id: 'p4',
@@ -51,7 +51,7 @@ const stepsPhone: Step[] = [
         ],
         alt: 'Add auto-labeling rule for Priority label on iPhone',
         label: 'iPhone screenshot: Priority label → Add auto-labeling',
-        src: '/mark_as_priority.png',
+        src: '/mark_as_priority.PNG',
     },
     {
         id: 'p5',
@@ -65,7 +65,7 @@ const stepsPhone: Step[] = [
         ],
         alt: 'iPhone notification permissions for Gmail',
         label: 'iPhone screenshot: iOS Settings → Notifications → Gmail',
-        src: '/gmail_notifications.png',
+        src: '/gmail_notifications.PNG',
     },
 ];
 
@@ -100,14 +100,7 @@ function StepCard({ step, index }: { step: Step; index: number }) {
 
                 <div className="mt-5">
                     {/*
-            Replace PlaceholderImage with your real <img /> when ready.
-            Recommended:
-              <img
-                src={"/path/to/iphone-screenshot.png"}
-                alt={step.alt}
-                className="w-full h-auto rounded-2xl border border-slate-200"
-              />
-          */}
+                     */}
                     {step.alt && step.label && step.src ? (
                         <div className="flex w-full items-center justify-center">
                             <Image
