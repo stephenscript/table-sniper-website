@@ -93,7 +93,7 @@ export const getLinkFromToken = (encodedToken: string) => {
         );
 
         encodedReservation = encodedReservation.replace('+', '%2F');
-        console.log({ encodedReservation });
+        // console.log({ encodedReservation });
         const tableUrl = `https://widgets.resy.com/#/reservation-details?reservation=${encodedReservation}&venueId=${venueId}&seats=${partySize}`;
 
         return tableUrl;
